@@ -1,0 +1,149 @@
+
+
+@keyframes pulse{
+    0%, 100%{
+        opacity: 0;
+    }
+    15%, 45%{
+        opacity: 1;
+    }
+    60%{
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+}
+
+#about, #features-2{
+    background-color: #2b2f4b;
+    padding: 40px;
+}
+
+#about .header, #features-2 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#features-2 .header h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#features-2 .header a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#features-2 .header a:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+
+#features-2 .card{
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#features-2 .card:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+#features-2 .card a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+#features-2 .card a:hover{
+    border-color: #fff;
+    box-shadow: none;
+}
+
+#features-2 .card .info h1{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+#features-2 .card .info p{
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+#features .feature-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#features-2 .feature-cards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
+#features-2 .feature-cards .card .info i{
+    color: #fff;
+    font-size: 8rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+}
+
+#features-2 .feature-cards .card .info h1{
+    text-align: center;
+}
+
+#features-2 .feature-cards .card .info p{
+    font-size: 1.1rem;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border-radius: 300px;
+    border: 1px solid transparent;
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+@media screen and (max-width: 575px ){
+    .image img {
+        width: 200px;
+        height: 200px;
+    }
+}
