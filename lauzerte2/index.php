@@ -1,4 +1,11 @@
 
+<?php 
+require_once('connect/connexion.php');
+?>
+<?php $req_activites = $connexion->prepare('SELECT * FROM lauzerte_actus') or die(print_r($connexion->errorInfo()));
+$req_activites->execute(array());
+?>
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -16,7 +23,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menu.css"> 
+    <link rel="stylesheet" href="css/menu.css">
     
 
     <!--JS LIBRARY-->
@@ -25,7 +32,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 
-
+    
+   
 </head>
 
 
@@ -71,13 +79,24 @@
                                             <a href="#" class="dropdown__link">Élus</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="dropdown__link">Comptes-rendus conseils municipaux</a>
-                                        </li>
-                                        <li>
                                             <a href="#" class="dropdown__link">Personnel de Mairie</a>
                                         </li>
                                         <li>
                                             <a href="#" class="dropdown__link">Résultat élections</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-folder-open-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Administratif</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Comptes-rendus conseils municipaux</a>
                                         </li>
                                         <li>
                                             <a href="#" class="dropdown__link">Délibérations</a>
@@ -356,159 +375,52 @@
     </header>
 
     <!--HERO-->
-    
-<!-- Carousel wrapper -->
+    <section class="hero">
+        <div class="img_hero">
+            
+            <img src="images/lauzerte_vue_ciel.webp" alt="Image arrière plan hero">
+            <div class="text_hero">
+                <h1>Lauzerte</h1>
+                <p>Parmi les plus beaux villages de France</p>
+            </div>
+        </div>   
+    </section>
 
-<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-carousel-init data-mdb-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"></li>
-      <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"></li>
-      <li data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"></li>
-    </ol>
-  
-    <!-- Inner -->
-    <div class="carousel-inner">
-      <!-- Single item -->
-      <div class="carousel-item active">
-        <img src="images/lauzerte_gens.png" class="d-block w-100" alt="..."/>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Lauzerte</h5>
-          <p>Parmi les plus beaux villages de France</p>
-        </div>
-      </div>
-  
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img src="images/lauzerte_marche.jpg" class="d-block w-100" alt="..."/>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Lauzerte</h5>
-          <p>Village médiéval du Tarn et Garonne</p>
-        </div>
-      </div>
-  
-      <!-- Single item -->
-      <div class="carousel-item">
-        <img src="images/lauzerte_gens2.png" class="d-block w-100" alt="..."/>
-        <div class="carousel-caption d-none d-md-block">
-        </div>
-      </div>
-    <!-- Inner -->
-  
-    <!-- Controls -->
-    <a class="carousel-control-prev" href="#carouselBasicExample" role="button" data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselBasicExample" role="button" data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div>
-</div>
-  <!-- Carousel wrapper -->
 
 
 <!--ACTUALITES CAROUSEL-->
-<?php include ('actualites.php');?>
-<section class="carousel-container">
-    <div class="titre_actu">
-        <h2> Les dernières actualités </h2>
-        <button class="btn_actu">
-            <a href="#">Toutes les actus</a>
-        </button>
-    </div>
-    <div class="swiffy-slider slider-item-show3 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
-        <ul class="slider-container py-4">
-            <li class="col-50 mx-2">
-                <div class="card shadow h-100">
-                    <div class="ratio ratio-16x9">
-                        <img src="images/pompiers.jpg" class="card-img-top" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body p-3 p-xl-5">
-                        <h3 class="card-title h5">Les pompiers recrutent !</h3>
-                        <p class="card-text">Les pompiers de Lauzerte recrutent des hommes et de femmes qui souhaitent s'engager pour leur commune, leurs voisins, leurs proches en devenant sapeur pompier volontaire.</p>
-                        <div><a href="#" class="btn btn-primary">En savoir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="col-30 mx-2">
-                <div class="card shadow h-100">
-                    <div class="ratio ratio-16x9">
-                        <img src="images/ateliers.webp" class="card-img-top" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body p-3 p-xl-5">
-                        <h3 class="card-title h5">Ateliers - Environnement & transition énergétique</h3>
-                        <p class="card-text">Création d’une "Équipe verte" et démarrage des "Ateliers Environnement & Transition énergétique" : Accédez aux dates retenues pour les 1ers ateliers et aux bulletins de participation.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                </div>
-            </li>
-            <li class="col-30 mx-2">
-                <div class="card shadow h-100">
-                    <div class="ratio ratio-16x9">
-                        <img src="images/lauzerte_coucher_soleil.jpg    " class="card-img-top" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body p-3 p-xl-5">
-                        <h3 class="card-title h5">Recensement de la population</h3>
-                        <p class="card-text">Des chiffres aujourd'hui pour construire demain ! Cette année, le recensement s'effectue sur la commune, du 18 janvier au 17 février 2024.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                </div>
-            </li>
-            <li class="col-30 mx-2">
-                <div class="card shadow h-100">
-                    <div class="ratio ratio-16x9">
-                        <img src="images/lauzerte_balade.jpg" class="card-img-top" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body  p-3 p-xl-5">
-                        <h3 class="card-title h5">Bilan sport santé bien-être gratuit</h3>
-                        <p class="card-text">La Maison Sport Santé Ufolep 82 et la CPAM Tarn et Garonne proposent des Bilans Sport Santé Bien-Être, gratuit pour tous les assurées du régime général.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                </div>
-            </li>
-            <li class="col-30 mx-2">
-                <div class="card shadow h-100">
-                    <div class="ratio ratio-16x9">
-                        <img src="images/lauzerte_bastide.jpg" class="card-img-top" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body  p-3 p-xl-5">
-                        <h3 class="card-title h5">Ateliers - Parler de la séparation à son enfant</h3>
-                        <p class="card-text">L'association AQPS vous propose deux ateliers sur le thème de la séparation, pour aider l'enfant à passer le cap, en partenariat avec le Centre d'information sur les droits des femmes et des familles (CIDFF), la CAF et le Réseau Parentalité.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                </div>
-            </li>
-            <li class="col-30 mx-2">
-                <div class="card shadow h-100">
-                    <div class="ratio ratio-16x9">
-                        <img src="images/lauzerte_facade_maison.jpg" class="card-img-top" loading="lazy" alt="...">
-                    </div>
-                    <div class="card-body  p-3 p-xl-5">
-                        <h3 class="card-title h5">Sécheresse - L'actualité des restrictions d'eau</h3>
-                        <p class="card-text">Restriction des prélèvements d’eau depuis le milieu naturel, consultez le dernier arrêté préfectoral.</p>
-                        <a href="#" class="btn btn-primary">En savoir plus</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    
-        <button type="button" class="slider-nav" aria-label="Go left"></button>
-        <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
-    
-        <div class="slider-indicators">
-            <button class="" aria-label="Go to slide"></button>
-            <button aria-label="Go to slide" class=""></button>
-            <button aria-label="Go to slide" class=""></button>
-            <button aria-label="Go to slide" class="active"></button>
-            <button aria-label="Go to slide"></button>
+    <section class="carousel-container">
+        <div class="titre_actu">
+            <h2> Actualités </h2>
+            <button class="btn_actu">
+                <a href="#">Toutes les actus</a>
+            </button>
         </div>
-    </div>
+        <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein">
+            <ul class="slider-container py-4">
+
+<?php include('actus.php') ; ?>
+
+            </ul>
+
+            <button type="button" class="slider-nav" aria-label="Go left"></button>
+            <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+            <div class="slider-indicators">
+                <button class="" aria-label="Go to slide"></button>
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class=""></button>
+                <button aria-label="Go to slide" class="active"></button>
+                <button aria-label="Go to slide"></button>
+            </div>
+        </div>
     
-    <script src="js/bootstrap.bundle.js"></script>
-</section>
+    
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+        
+    </section>
+    <
 
 
 <!--LIENS RAPIDES-->
@@ -556,76 +468,6 @@
 </section>
 
 
-<section class="projets">
-    <h2>Les projets de Lauzerte</h2>    
-    
-    <section class="articles">
-        <article>
-          <div class="article-wrapper">
-            <figure>
-              <img src="images/lauzerte_facade_maison.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-              <h2>Valorisation</h2>
-              <p>
-                La vacance immobilière est une problématique forte avec plus de 100 logements vacants dans le centre-bourg ! Les logements anciens du centre sont souvent inadaptés voire vétustes.
-              </p>
-              <a href="#" class="read-more">
-                Lire Plus <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-        <article>
-      
-          <div class="article-wrapper">
-            <figure>
-              <img src="images/lauzerte_cantine.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-              <h2>Nouvelle cantine</h2>
-              <p>
-                François Le Moing a rappelé les travaux en cours : nouvelle cantine, démolition intérieure de l’ancien bâtiment des finances pour l’ouverture d’une halle, les rénovations énergétiques de la mairie, de l’école maternelle et de l’espace Points de vue.
-              </p>
-              <a href="#" class="read-more">
-                Lire Plus <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-        <article>
-      
-          <div class="article-wrapper">
-            <figure>
-              <img src="images/lauzerte_gymnase.jpg" alt="" />
-            </figure>
-            <div class="article-body">
-              <h2>Restauration</h2>
-              <p>
-                À la rentrée des vacances de la Toussaint, le gymnase de Lauzerte (Tarn-et-Garonne) aura une nouvelle physionomie. Un chantier de rénovation est en effet en cours dans ce complexe sportif construit en 1974.
-               </p>
-              <a href="#" class="read-more">
-                Lire Plus <span class="sr-only">about this is some title</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-
-</section>
-
-
-
 <!--AGENDA-->
 <section class="agenda">
     <div class="titre_agenda">
@@ -645,63 +487,61 @@
 
 
 <!--FOOTER-->
-<footer>
+
     <div class="footer-clean">
-        <div class="trait"></div>
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Quelque plus</h3>
-                    <ul>
-                        <li><a href="#">Recrutement</a></li>
-                        <li><a href="#">Newsletter</a></li>
-                        <li><a href="#">Plan Du Site</a></li>
-                        <li><a href="#">Mentions Légales</a></li>
-                    </ul>
-                    <div class="logo_footer_2">
-                        <a href="#"><img src="images/lauzerte_logo.png" alt=""></a>
+        <footer>
+            <div class="trait"></div>
+            <div class="container_footer">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Quelque plus</h3>
+                        <ul>
+                            <li><a href="#">Recrutement</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Plan Du Site</a></li>
+                            <li><a href="#">Mentions Légales</a></li>
+                        </ul>
+                        <div class="logo_footer_2">
+                            <a href="#"><img src="images/lauzerte_logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Horaires d'ouverture</h3>
+                        <ul>
+                            <li>Lundi au mercredi :<br>09h-12h / 14h-17h30</li>
+                            <li>Fermé le Jeudi</li>
+                            <li>Vendredi : <br>09h-12h / 14h-17h30 </li>
+                            <li>Samedi : <br>09h-12h<br>(uniquement les 1er samedi du mois)</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Contacts</h3>
+                        <ul>
+                            
+                            <li><a href="tel:+563946514">05 63 94 65 14</a></li>
+                            <li><a href="#">mairie@lauzerte.fr</a></li>
+                            <li><a href="https://maps.app.goo.gl/1uJsWiaNzoePKQAo9" target="_blank">5, Rue de la Mairie, 82110 Lauzerte</a></li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.593716464785!2d1.1354945866256625!3d44.25660372423344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab860a276e705f%3A0x51f98a5757569f41!2sMairie%20de%20Lauzerte!5e0!3m2!1sfr!2sfr!4v1702901217737!5m2!1sfr!2sfr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="https://www.facebook.com/MairieLauzerte/?locale=fr_FR" target="_blank" ><i class="icon ion-social-facebook"></i></a>
+                        <a href="https://www.instagram.com/mairielauzerte/?hl=fr" target="_blank" ><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Commune de Lauzerte © 2023</p>
+                        <div class="logo_footer">
+                        <a href="https://www.les-plus-beaux-villages-de-france.org/fr/" target="_blank"><img src="images/logo_village_fr.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Horaires d'ouverture</h3>
-                    <ul>
-                        <li>Lundi au mercredi :<br>09h-12h / 14h-17h30</li>
-                        <li>Fermé le Jeudi</li>
-                        <li>Vendredi : <br>09h-12h / 14h-17h30 </li>
-                        <li>Samedi : <br>09h-12h<br>(uniquement les 1er samedi du mois)</li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 item">
-                    <h3>Contacts</h3>
-                    <ul>
-                        
-                        <li><a href="tel:+563946514">05 63 94 65 14</a></li>
-                        <li><a href="#">mairie@lauzerte.fr</a></li>
-                        <li><a href="https://maps.app.goo.gl/1uJsWiaNzoePKQAo9" target="_blank">5, Rue de la Mairie, 82110 Lauzerte</a></li>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.593716464785!2d1.1354945866256625!3d44.25660372423344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ab860a276e705f%3A0x51f98a5757569f41!2sMairie%20de%20Lauzerte!5e0!3m2!1sfr!2sfr!4v1702901217737!5m2!1sfr!2sfr" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </ul>
-                </div>
-                <div class="col-lg-3 item social">
-                    <a href="https://www.facebook.com/MairieLauzerte/?locale=fr_FR" target="_blank" ><i class="icon ion-social-facebook"></i></a>
-                    <a href="https://www.instagram.com/mairielauzerte/?hl=fr" target="_blank" ><i class="icon ion-social-instagram"></i></a>
-                    <p class="copyright">Commune de Lauzerte © 2023</p>
-                    <div class="logo_footer">
-                    <a href="https://www.les-plus-beaux-villages-de-france.org/fr/" target="_blank"><img src="images/logo_village_fr.png" alt=""></a>
-                    </div>
-                </div>
-        </div>
+            </div>
+        </footer>
     </div>
-</footer>
-    
 
 <script>
 AOS.init();
 </script>
 
-<!--MENU-->
 <script src="js/menu.js"></script>
-
-<!-- MDB -->
-<script type="text/javascript" src="js/mdb.umd.min.js"></script>
 
 </body>
 </html>
