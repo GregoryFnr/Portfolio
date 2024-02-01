@@ -198,6 +198,10 @@ header .info-text .scroll::before{
     font-size: 1.1rem;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .scroll-top{
     display: none;
     position: fixed;
