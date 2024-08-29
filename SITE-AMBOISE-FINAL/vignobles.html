@@ -1,0 +1,324 @@
+
+ <!-- header start -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amboise Val de Loire</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.0.0/gpx.min.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+ <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="accueil-amboise.html"><img src="./img/amboise-logo-1.png" alt=""></a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay">
+                </div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                            <a href="#">Découvrir Amboise<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Histoire et Patrimoine Bati</h4>
+                                    <ul>
+                                         <li><a href="chateau-royal-amboise.html">Château Royal d'Amboise</a></li>
+                                         <li><a href="clos-luce-amboise.html">Clos Lucé</a></li>
+                                         <li><a href="monuments-historiques.html">Tous les monuments historiques</a></li>
+                                         <li><a href="visites-guidees.html">Nos visites guidées</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Itinéraires et Visites</h4>
+                                    <ul>
+                                        <li><a href="idees-journees-weekend.html">Idée de journée & week-end</a></li>
+                                        <li><a href="visites-thematiques.html">Guides de visites thématiques</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Loisirs</h4>
+                                  <ul>
+                                         <li><a href="activites-plein-air.html">Activités de plein air (vélo, randonnée)</a></li>
+                                         <li><a href="parcs-jardins.html">Parcs et jardins</a></li>
+                                         <li><a href="activités-nautiques.html">Activités nautiques </a></li>
+                                         <li><a href="degustation.html">Dégustation de produits locaux</a></li>
+                                         <li><a href="recettes.html">Recettes locales</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Vie Culturelle</h4>
+                                    <ul>
+                                        <li><a href="agenda.html">Agenda</a></li>
+                                        <li><a href="marches-locaux.html">Marchés locaux et artisanat</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">Préparer son séjour<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Hébergements</h4>
+                                    <ul>
+                                         <li><a href="hotels.html">Hôtels</a></li>
+                                         <li><a href="chambres-hotes.html">Chambres d'hôtes</a></li>
+                                         <li><a href="locations-vacances.html">Locations de vacances</a></li>
+                                         <li><a href="campings.html">Campings</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Restauration</h4>
+                                    <ul>
+                                        <li><a href="restaurants-locaux.html">Restaurants locaux</a></li>
+                                        <li><a href="restaurants-gastronomiques.html">Restaurants gastronomique</a></li>
+                                        <li><a href="cafes-bar.html">Cafés et bars</a></li>
+                                        <li><a href="vignobles.html">Vignobles</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Informations Pratiques</h4>
+                                    <ul>
+                                        <li><a href="train.html">Comment venir en train ?</a></li>
+                                        <li><a href="transports-stationnement.html">Transports publics et stationnement</a></li>
+                                        <li><a href="questions.html">Question fréquentes</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<section class="hero vignobles">
+    <div class="container-titre">
+        <div class="titre-hero">
+            <h1>Les vignobles</h1>
+        </div>
+    </div>
+</section>
+
+<section class="intro">
+    <div class="intro-container">
+        <h2>Les vignobles d'Amboise et Val de Loire</h2>
+        <p>Découvrez les vignobles du Val de Loire, où l'art de la viticulture se marie à des siècles d'histoire pour créer des <b>vins raffinés</b> et uniques. Parcourez les coteaux ensoleillés surplombant la Loire, et laissez-vous séduire par la richesse des terroirs et la passion des vignerons locaux. Entre dégustations, visites de caves et <b>panoramas d'exception,</b> les vignobles d'Amboise vous invitent à un voyage sensoriel au cœur de la vallée de la Loire.</p>
+    </div>
+</section>
+
+<section class="jardin">
+    <div class="container-column-1">
+        <div class="column-left">
+            <div class="swiffy-slider slider-nav-chevron slider-item-ratio slider-item-show2 slider-item-ratio-1x1 slider-nav-visible" id="slider1">
+                <ul class="slider-container">
+                    <li><img src="./img/clos_richardiere-4.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/clos_richardiere-1.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/clos_richardiere-2.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/clos_richardiere-3.jpg" loading="lazy" alt="..."></li>
+                </ul>
+            
+                <button type="button" class="slider-nav" aria-label="Go left"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+            
+                <div class="slider-indicators slider-indicators-round d-none d-md-flex">
+                    <button class="" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" class="active"></button>
+                    <button aria-label="Go to slide" class=""></button>
+                    <button aria-label="Go to slide" class=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="column-right">
+            <h2>Clos de la Richardière</h2>
+            <p>La Richardière est un <b>ancien domaine viticole</b> qui produisait du vin jusqu’en 1959. C’est un véritable héritage culturel que Guylaine et Christophe GALLAND vous feront découvrir dans ce lieu chargé d’histoire.</p>
+            <p>Grâce à un parcours insolite, une équipe de passionnée vous présentera le travail de la vigne avec une <b>visite du domaine</b> ainsi qu’une dégustation.</p>
+            <div class="container-tarifs-visites">
+                <p class="tarifs-visites">Réservation obligatoire</p>
+            </div>
+            <div class="container-btn">
+                <a href="https://amboise-valdeloire.com/visite-historique-du-clos-luce-avec-un-guide-conferencier/" target="_blank"><button class="btn-visites-guidees">Contacter</button></a>
+                <a href="https://www.google.com/maps/dir//53+Rue+du+Vau+de+Bonnin+37400+Amboise/@47.4007125,0.9639777,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47fcca5dfabddd61:0xae72302f1f74c395!2m2!1d0.9639777!2d47.4007125?entry=ttu" target="_blank"><button class="btn-visites-guidees">Iitinéraire</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="bg-color">
+<section class="jardin">
+    <div class="container-column-2">
+        <div class="column-left">
+            <h2>La Maison Monmousseau</h2>
+            <p>Les caves de la Maison Monmousseau sont un site incontournable de l’œnotourisme du Val de Loire. A quelques minutes du <b>Château de Chenonceau,</b> vous commencerez votre visite en plein air par un point de vue exceptionnel sur le Cher et la célèbre « Vallée des Rois », qui fut aussi le <b>plus grand lieu</b> de l’habitat troglodytique en France !</b></p>
+            <div class="container-tarifs-visites">
+                <p class="tarifs-visites">Entrée libre, adulte : 7€</p>
+                <p class="tarifs-visites">Visite guidée, adulte : 9€</p>
+                <p class="tarifs-visites">Enfant (moins de 14 ans) : Gratuit</p>
+            </div>
+            <div class="container-btn">
+                <a href="https://www.laroutedesvinsdeloire.fr/parcours/monmousseau/" target="_blank"><button class="btn-visites-guidees">Réserver</button></a>
+                <a href="https://www.google.com/maps/dir//Caves+Monmousseau,+Rue+de+Vierzon,+Montrichard+Val+de+Cher/@47.3448424,1.1149193,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47fcaef353c57289:0x1489a395091c8001!2m2!1d1.1973381!2d47.3448199?entry=ttu" target="_blank"><button class="btn-visites-guidees">Iitinéraire</button></a>
+            </div>
+        </div>
+        <div class="column-right">
+            <div class="swiffy-slider slider-nav-chevron slider-item-ratio slider-item-show2 slider-item-ratio-1x1 slider-nav-visible" id="slider1">
+                <ul class="slider-container">
+                    <li><img src="./img/maison-montmousseau-4.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/maison-montmousseau.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/maison-montmousseau-3.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/maison-montmousseau-2.jpg" loading="lazy" alt="..."></li>
+                </ul>
+            
+                <button type="button" class="slider-nav" aria-label="Go left"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+            
+                <div class="slider-indicators slider-indicators-square d-none d-md-flex">
+                    <button class="" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" class="active"></button>
+                    <button aria-label="Go to slide" class=""></button>
+                    <button aria-label="Go to slide" class=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<section class="jardin">
+    <div class="container-column-1">
+        <div class="column-left">
+            <div class="swiffy-slider slider-nav-chevron slider-item-ratio slider-item-show2 slider-item-ratio-1x1 slider-nav-visible" id="slider1">
+                <ul class="slider-container">
+                    <li><img src="./img/cave-vouvray-1.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/cave-vouvray-2.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/cave-vouvray-3.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/vin-vouvray.jpg" loading="lazy" alt="..."></li>
+                </ul>
+            
+                <button type="button" class="slider-nav" aria-label="Go left"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+            
+                <div class="slider-indicators slider-indicators-round d-none d-md-flex">
+                    <button class="" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" class="active"></button>
+                    <button aria-label="Go to slide" class=""></button>
+                    <button aria-label="Go to slide" class=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="column-right">
+            <h2>Cave Vouvray</h2>
+            <p>La Cave des Producteurs de Vouvray a été créée en 1953 à l’initiative d’un <b>petit groupe</b> de vignerons.</p>
+            <p>Actuellement, la cave coopérative de Vouvray compte une <b>trentaine de passionnés</b> qui poursuivent l’aventure avec près de 400 ha de vignes réparties sur toute l’appellation Vouvray.</p>
+            <p>Dès sa création, les vignerons ont imaginé un système d’apport et un <b>fonctionnement originaux.</b> En effet, les adhérents sont responsables des vendanges, du pressurage et de la vinification dans leurs exploitations respectives.</p>
+            <div class="container-tarifs-visites">
+                <p class="tarifs-visites">Visite libre : Gratuit</p>
+                <p class="tarifs-visites">Visite guidée : 5€</p>
+            </div>
+            <div class="container-btn">
+                <a href="https://chateau-gaillard-amboise.fr/billetterie/" target="_blank"><button class="btn-visites-guidees">Réserver</button></a>
+                <a href="https://maps.app.goo.gl/TEHFny9kRFCtAmrK8" target="_blank"><button class="btn-visites-guidees">Iitinéraire</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--FOOTER START-->
+
+    <section class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/amboise-logo-2.png" alt="">
+            </div>
+            <div class="row-footer">
+                <ul class="column-footer">
+                    <li><h3>Localisation</h3></li>
+                    <li><a href="#">Quai du général de gaulle <br>37400 Amboise</a></li>
+                    <li><a href="#"><i class='bx bx-phone' style="font-size: 1.5rem;"></i> 02 47 57 09 28 </a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nous contacter</h3></li>
+                    <li><p>Nous vous proposons un formulaire de contact pour toutes demandes de renseignements particulières</p></li>
+                    <li><a href="contact.html"><button class="btn-footer-contact">Contacter</button></a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nos réseaux sociaux</h3></li>
+                    <li><a href="https://www.instagram.com/amboisetourisme/" target="_blank"><i class='bx bxl-instagram' style="font-size: 1.5rem;"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/amboisetourisme" target="_blank"> <i class='bx bxl-facebook-square' style="font-size: 1.5rem;" ></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@amboisetourisme" target="_blank"><i class='bx bxl-tiktok'  style="font-size: 1.5rem;"></i> TikTok</a></li>
+                </ul>
+            </div>
+            <div class="partners-container">
+                <ul class="partners-row">
+                    <li><a href="https://www.qualite-tourisme.gouv.fr/fr" target="_blank"><img src="./img/icone-qualite-tourisme.svg" alt=""></a></li>
+                    <li><a href="https://tourisme-handicaps.org/" target="_blank"><img src="./img/icone-tourisme-handicap.svg" alt=""></a></li>
+                    <li><a href="https://www.adn-tourisme.fr/" target="_blank"><img src="./img/icone-ot-de-france.svg" alt=""></a></li>
+                    <li><a href="https://www.loireavelo.fr/" target="_blank"><img src="./img/icone-loire-a-velo.svg" alt=""></a></li>
+                </div>
+            </ul>
+            <div class="legal">
+                <ul class="row-legal">
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Conditions générale de vente</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+                <ul class="row-legal" style="margin-top: 20px;">
+                    <li><a href="https://www.linkedin.com/in/gregory-fnr/" target="_blank" style="color: #C7AA67; opacity: 1;">© Site web réalisé par Grégory FOURNIER</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!--FOOTER END-->
+
+<script src="./js/menu.js"></script>
+</body>
+</html>

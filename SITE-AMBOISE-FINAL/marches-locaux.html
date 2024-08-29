@@ -1,0 +1,271 @@
+
+ <!-- header start -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amboise Val de Loire</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.0.0/gpx.min.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+ <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="accueil-amboise.html"><img src="./img/amboise-logo-1.png" alt=""></a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay">
+                </div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                            <a href="#">Découvrir Amboise<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Histoire et Patrimoine Bati</h4>
+                                    <ul>
+                                         <li><a href="chateau-royal-amboise.html">Château Royal d'Amboise</a></li>
+                                         <li><a href="clos-luce-amboise.html">Clos Lucé</a></li>
+                                         <li><a href="monuments-historiques.html">Tous les monuments historiques</a></li>
+                                         <li><a href="visites-guidees.html">Nos visites guidées</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Itinéraires et Visites</h4>
+                                    <ul>
+                                        <li><a href="idees-journees-weekend.html">Idée de journée & week-end</a></li>
+                                        <li><a href="visites-thematiques.html">Guides de visites thématiques</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Loisirs</h4>
+                                  <ul>
+                                         <li><a href="activites-plein-air.html">Activités de plein air (vélo, randonnée)</a></li>
+                                         <li><a href="parcs-jardins.html">Parcs et jardins</a></li>
+                                         <li><a href="activités-nautiques.html">Activités nautiques </a></li>
+                                         <li><a href="degustation.html">Dégustation de produits locaux</a></li>
+                                         <li><a href="recettes.html">Recettes locales</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Vie Culturelle</h4>
+                                    <ul>
+                                        <li><a href="agenda.html">Agenda</a></li>
+                                        <li><a href="marches-locaux.html">Marchés locaux et artisanat</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">Préparer son séjour<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Hébergements</h4>
+                                    <ul>
+                                         <li><a href="hotels.html">Hôtels</a></li>
+                                         <li><a href="chambres-hotes.html">Chambres d'hôtes</a></li>
+                                         <li><a href="locations-vacances.html">Locations de vacances</a></li>
+                                         <li><a href="campings.html">Campings</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Restauration</h4>
+                                    <ul>
+                                        <li><a href="restaurants-locaux.html">Restaurants locaux</a></li>
+                                        <li><a href="restaurants-gastronomiques.html">Restaurants gastronomique</a></li>
+                                        <li><a href="cafes-bar.html">Cafés et bars</a></li>
+                                        <li><a href="vignobles.html">Vignobles</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Informations Pratiques</h4>
+                                    <ul>
+                                        <li><a href="train.html">Comment venir en train ?</a></li>
+                                        <li><a href="transports-stationnement.html">Transports publics et stationnement</a></li>
+                                        <li><a href="questions.html">Question fréquentes</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<section class="hero marches-locaux">
+    <div class="container-titre">
+        <div class="titre-hero">
+            <h1>Marchés locaux et artisanat</h1>
+        </div>
+    </div>
+</section>
+
+<section class="intro">
+    <div class="intro-container">
+        <h2>Découvrez les marchés locaux d'Amboise</h2>
+        <p>Découvrez les marchés locaux d'Amboise, où <b>authenticité</b> et <b>saveurs</b> du terroir se rencontrent. Flânez parmi les étals colorés, rencontrez les producteurs passionnés, et laissez-vous tenter par des <b>produits frais,</b> artisanaux, et typiquement ligériens. Que vous soyez à la recherche de spécialités gastronomiques, d’artisanat local ou simplement d’une expérience conviviale, les marchés d’Amboise vous offrent un véritable voyage au cœur des traditions de la région.</p>
+    </div>
+</section>
+
+<div class="title-visite">
+    <h2>Le marché</h2>
+</div>
+<section class="jardin" style="margin: 20px auto;">
+    <div class="container-column-1">
+        <div class="column-left">
+            <div class="swiffy-slider slider-nav-chevron slider-item-ratio slider-item-show2 slider-item-ratio-1x1 slider-nav-visible" id="slider1">
+                <ul class="slider-container">
+                    <li><img src="./img/marche-Amboise-carrousel4.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/marche-Amboise-carrousel3.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/marche-Amboise-carrousel2.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="./img/marche-Amboise-carrousel.jpg" loading="lazy" alt="..."></li>
+                </ul>
+            
+                <button type="button" class="slider-nav" aria-label="Go left"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+            
+                <div class="slider-indicators slider-indicators-round d-none d-md-flex">
+                    <button class="" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" class="active"></button>
+                    <button aria-label="Go to slide" class=""></button>
+                    <button aria-label="Go to slide" class=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="column-right">
+            <h2>Le marché d'Amboise</h2>
+            <p>Découvrez le marché d'Amboise, un rendez-vous incontournable qui se tient <b>chaque vendredi</b> et <b>dimanche matin.</b> Les rues de la ville s'animent alors avec des étals regorgeant de produits frais et locaux, où producteurs et artisans partagent leur passion. Du fromage fermier aux fruits de saison, en passant par les <b>spécialités régionales,</b> ce marché est l'endroit idéal pour goûter à la richesse du terroir ligérien tout en profitant de l'ambiance chaleureuse d'Amboise.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="title-visite" style="margin-top: 50px;">
+    <h2>Les artisans d'Amboise</h2>
+</div>
+<section class="section" style="margin: 50px auto;">
+    <div class="container-column">
+        <div class="left">
+            <img src="./img/verrerie-amboise-carre.jpg" alt="">
+        </div>
+        <div class="right">
+            <h3>Verrerie d'Art d'Amboise</h3>
+            <p>Venez découvrir l’art du <b>verre soufflé</b> à la canne dans une cave troglodytique. Exposition permanente libre de nos créations de pièces uniques. Visite guidée avec démonstration (environ 1 h). Groupes sur RDV Initiation individuelle</p>
+            <a href="https://www.verreriedartdamboise.com/" target="_blank"><button class="btn-visites-guidees">Site Web</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container-column-2">
+        <div class="left">
+            <h3>L'Arôm'Arrangé</h3>
+            <p>"Amateur de bons Rhums et toujours en recherche de <b>nouvelles saveurs,</b> je concoctais pour ma famille et mes amis, des mélanges gourmands et originaux pour agrémenter les rhums agricoles… Quant à un carrefour de vie je dus choisir une nouvelle voie professionnelle, ce fut l’évidence !"</p>
+            <a href="https://aromarrange.fr/" target="_blank"><button class="btn-visites-guidees">Site Web</button></a>
+        </div>
+        <div class="right">
+            <img src="./img/resto-carre.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+    <!--Footer start-->
+    
+        <section class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/amboise-logo-2.png" alt="">
+            </div>
+            <div class="row-footer">
+                <ul class="column-footer">
+                    <li><h3>Localisation</h3></li>
+                    <li><a href="#">Quai du général de gaulle <br>37400 Amboise</a></li>
+                    <li><a href="#"><i class='bx bx-phone' style="font-size: 1.5rem;"></i> 02 47 57 09 28 </a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nous contacter</h3></li>
+                    <li><p>Nous vous proposons un formulaire de contact pour toutes demandes de renseignements particulières</p></li>
+                    <li><a href="contact.html"><button class="btn-footer-contact">Contacter</button></a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nos réseaux sociaux</h3></li>
+                    <li><a href="https://www.instagram.com/amboisetourisme/" target="_blank"><i class='bx bxl-instagram' style="font-size: 1.5rem;"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/amboisetourisme" target="_blank"> <i class='bx bxl-facebook-square' style="font-size: 1.5rem;" ></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@amboisetourisme" target="_blank"><i class='bx bxl-tiktok'  style="font-size: 1.5rem;"></i> TikTok</a></li>
+                </ul>
+            </div>
+            <div class="partners-container">
+                <ul class="partners-row">
+                    <li><a href="https://www.qualite-tourisme.gouv.fr/fr" target="_blank"><img src="./img/icone-qualite-tourisme.svg" alt=""></a></li>
+                    <li><a href="https://tourisme-handicaps.org/" target="_blank"><img src="./img/icone-tourisme-handicap.svg" alt=""></a></li>
+                    <li><a href="https://www.adn-tourisme.fr/" target="_blank"><img src="./img/icone-ot-de-france.svg" alt=""></a></li>
+                    <li><a href="https://www.loireavelo.fr/" target="_blank"><img src="./img/icone-loire-a-velo.svg" alt=""></a></li>
+                </div>
+            </ul>
+            <div class="legal">
+                <ul class="row-legal">
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Conditions générale de vente</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+                <ul class="row-legal" style="margin-top: 20px;">
+                    <li><a href="https://www.linkedin.com/in/gregory-fnr/" target="_blank" style="color: #C7AA67; opacity: 1;">© Site web réalisé par Grégory FOURNIER</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer end-->
+
+    
+    <script src="./js/menu.js"></script>
+</body>
+</html>

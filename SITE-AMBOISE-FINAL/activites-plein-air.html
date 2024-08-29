@@ -1,0 +1,329 @@
+
+ <!-- header start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amboise Val de Loire</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.0.0/gpx.min.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+ <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="accueil-amboise.html"><img src="./img/amboise-logo-1.png" alt=""></a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay">
+                </div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                            <a href="#">Découvrir Amboise<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Histoire et Patrimoine Bati</h4>
+                                    <ul>
+                                         <li><a href="chateau-royal-amboise.html">Château Royal d'Amboise</a></li>
+                                         <li><a href="clos-luce-amboise.html">Clos Lucé</a></li>
+                                         <li><a href="monuments-historiques.html">Tous les monuments historiques</a></li>
+                                         <li><a href="visites-guidees.html">Nos visites guidées</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Itinéraires et Visites</h4>
+                                    <ul>
+                                        <li><a href="idees-journees-weekend.html">Idée de journée & week-end</a></li>
+                                        <li><a href="visites-thematiques.html">Guides de visites thématiques</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Loisirs</h4>
+                                  <ul>
+                                         <li><a href="activites-plein-air.html">Activités de plein air (vélo, randonnée)</a></li>
+                                         <li><a href="parcs-jardins.html">Parcs et jardins</a></li>
+                                         <li><a href="activités-nautiques.html">Activités nautiques </a></li>
+                                         <li><a href="degustation.html">Dégustation de produits locaux</a></li>
+                                         <li><a href="recettes.html">Recettes locales</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Vie Culturelle</h4>
+                                    <ul>
+                                        <li><a href="agenda.html">Agenda</a></li>
+                                        <li><a href="marches-locaux.html">Marchés locaux et artisanat</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">Préparer son séjour<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Hébergements</h4>
+                                    <ul>
+                                         <li><a href="hotels.html">Hôtels</a></li>
+                                         <li><a href="chambres-hotes.html">Chambres d'hôtes</a></li>
+                                         <li><a href="locations-vacances.html">Locations de vacances</a></li>
+                                         <li><a href="campings.html">Campings</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Restauration</h4>
+                                    <ul>
+                                        <li><a href="restaurants-locaux.html">Restaurants locaux</a></li>
+                                        <li><a href="restaurants-gastronomiques.html">Restaurants gastronomique</a></li>
+                                        <li><a href="cafes-bar.html">Cafés et bars</a></li>
+                                        <li><a href="vignobles.html">Vignobles</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Informations Pratiques</h4>
+                                    <ul>
+                                        <li><a href="train.html">Comment venir en train ?</a></li>
+                                        <li><a href="transports-stationnement.html">Transports publics et stationnement</a></li>
+                                        <li><a href="questions.html">Question fréquentes</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<section class="hero activites-plein-air">
+    <div class="container-titre">
+        <div class="titre-hero">
+            <h1>Activites de plein air </h1>
+        </div>
+    </div>
+</section>
+
+
+<section class="intro">
+    <div class="intro-container">
+        <h2>Découvrez nos activités de plein air à Amboise</h2>
+        <p>Amboise regorge de possibilités pour profiter pleinement de la nature environnante. Laissez-vous séduire par la beauté des paysages, la <b>richesse du patrimoine</b> et la douceur de vivre qui caractérisent cette région. Préparez-vous à vivre des <b>moments inoubliables</b> en plein air, entre amis, en famille ou en solo, au cœur de l'une des plus belles régions de France.</p>
+    </div>
+</section>
+
+<div class="main-container">
+    <div class="cards-filters-container">
+        <div class="filters-card">
+            <h3>Filtres</h3>
+            <button class="filter-btn-activity" data-filter="all">Tous</button>
+            <button class="filter-btn-activity" data-filter="velo">La Loire à vélo</button>
+            <button class="filter-btn-activity" data-filter="rando">Randonnée</button>
+            <button class="filter-btn-activity" data-filter="accrobranche">Accrobranche</button>
+            <button class="filter-btn-activity" data-filter="montgolfiere">Montgolfière</button>
+        </div>
+        <div class="card-map-container">
+            <div class="activity card-map velo-2 velo" id="loire-terroir" data-category="velo" data-gpx="/gpx/loire-terroir.gpx">
+                <div class="card-map-title">
+                    <h2>Loire & Terroir</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-trip'></i><span class="text-icon">12,5 km</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">1h</span></li>
+                        <li><i class='bx bx-error-alt'></i><span class="text-icon">Facile</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Loire & Terroir</h2>
+                    <p>Découvrez seul, en famille, entre amis, les trésors discrets du Val de Loire au cours d’une balade à vélo.</p>
+                    <a href="https://amboise-valdeloire.com/wp-content/uploads/2024/02/circuit-boucle-cyclable-balade-velo-n12-loire-et-terroir.pdf" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map velo-3 velo" id="la-voie-royale" data-category="velo">
+                <div class="card-map-title ">
+                    <h2>La voie royale</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-trip'></i><span class="text-icon">45 km</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">3h45</span></li>
+                        <li><i class='bx bx-error-alt'></i><span class="text-icon">Moyen</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">La voie royale</h2>
+                    <p>Découvrez des joyaux architecturaux tels que le Château de Chenonceau, le Château Royal d’Amboise et le Clos Lucé.</p>
+                    <a href="https://amboise-valdeloire.com/wp-content/uploads/2024/02/carte-circuit47-fr-la-voie-royale.pdf" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map rando-1 rando" id="au-coeur-de-la-cite">
+                <div class="card-map-title ">
+                    <h2>Au cœur de la cité</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-trip'></i><span class="text-icon">5km</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">1h15</span></li>
+                        <li><i class='bx bx-error-alt'></i><span class="text-icon">Facile</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Au cœur de la cité</h2>
+                    <p>Balade dans le centre-ville afin de découvrir les monuments qu'Amboise vous réserve, à essayer aussi de nuit !</p>
+                    <a href="https://amboise-valdeloire.com/wp-content/uploads/2024/03/flanerie-circuit-b-facades-ruelles-au-coeur-de-la-cite.pdf" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map rando-2 rando" id="sur-les-terres-royales">
+                <div class="card-map-title ">
+                    <h2>Sur les terres royales</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-trip'></i><span class="text-icon">7 km</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">2h</span></li>
+                        <li><i class='bx bx-error-alt'></i><span class="text-icon">Facile</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Sur les terres royales</h2>
+                    <p>Amboise devient la terre des Rois de France à la Renaissance. Découvrez les merveilleux paysages inscrit à l'UNESCO</p>
+                    <a href="https://amboise-valdeloire.com/wp-content/uploads/2024/03/rando-pedestre-amboise-entre-terres-royales-et-eaux-sauvages.pdf" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+
+            <div class="activity card-map accrobranche" id="clic-lac-parc">
+                <div class="card-map-title ">
+                    <h2>Clic'Lac Parc Accrobranche</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <a href="tel:0652538853"></a><li><i class='bx bx-phone' ></i><span class="text-icon">06 52 53 88 53</span></li>
+                        <li><i class='bx bx-error-alt'></i><span class="text-icon">Sur réservation</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Clic'Lac Parc Accrobranche</h2>
+                    <p>Parc accrobranche, d'aventures et de loisirs proche d'Amboise</p>
+                    <a href="https://cliclacaventure.fr/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map montgolfiere" id="balloon-revolution">
+                <div class="card-map-title ">
+                    <h2>Balloon Revolution</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <a href="tel:0247239963"></a><li><i class='bx bx-phone' ></i><span class="text-icon">02 47 23 99 63</span></li>
+                        <li><i class='bx bx-euro' ></i><span class="text-icon">A partir de 199€</span></li>
+                        <li><i class='bx bx-error-alt'></i><span class="text-icon">Sur réservation</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Balloon Revolution</h2>
+                    <p>Balloon Revolution propose des vols en montgolfière à proximité des châteaux d'Amboise, de Chenonceau et de Chaumont-sur-Loire.</p>
+                    <a href="https://www.balloonrevolution.com/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-container">
+        <div class="map-activity map" id="map-activity">
+            <!--VOIR Js-->
+        </div>
+    </div>
+</div>
+
+    <!--FOOTER START-->
+    
+    <section class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/amboise-logo-2.png" alt="">
+            </div>
+            <div class="row-footer">
+                <ul class="column-footer">
+                    <li><h3>Localisation</h3></li>
+                    <li><a href="#">Quai du général de gaulle <br>37400 Amboise</a></li>
+                    <li><a href="#"><i class='bx bx-phone' style="font-size: 1.5rem;"></i> 02 47 57 09 28 </a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nous contacter</h3></li>
+                    <li><p>Nous vous proposons un formulaire de contact pour toutes demandes de renseignements particulières</p></li>
+                    <li><a href="contact.html"><button class="btn-footer-contact">Contacter</button></a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nos réseaux sociaux</h3></li>
+                    <li><a href="https://www.instagram.com/amboisetourisme/" target="_blank"><i class='bx bxl-instagram' style="font-size: 1.5rem;"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/amboisetourisme" target="_blank"> <i class='bx bxl-facebook-square' style="font-size: 1.5rem;" ></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@amboisetourisme" target="_blank"><i class='bx bxl-tiktok'  style="font-size: 1.5rem;"></i> TikTok</a></li>
+                </ul>
+            </div>
+            <div class="partners-container">
+                <ul class="partners-row">
+                    <li><a href="https://www.qualite-tourisme.gouv.fr/fr" target="_blank"><img src="./img/icone-qualite-tourisme.svg" alt=""></a></li>
+                    <li><a href="https://tourisme-handicaps.org/" target="_blank"><img src="./img/icone-tourisme-handicap.svg" alt=""></a></li>
+                    <li><a href="https://www.adn-tourisme.fr/" target="_blank"><img src="./img/icone-ot-de-france.svg" alt=""></a></li>
+                    <li><a href="https://www.loireavelo.fr/" target="_blank"><img src="./img/icone-loire-a-velo.svg" alt=""></a></li>
+                </div>
+            </ul>
+            <div class="legal">
+                <ul class="row-legal">
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Conditions générale de vente</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+                <ul class="row-legal" style="margin-top: 20px;">
+                    <li><a href="https://www.linkedin.com/in/gregory-fnr/" target="_blank" style="color: #C7AA67; opacity: 1;">© Site web réalisé par Grégory FOURNIER</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER END-->
+
+    <script src="./js/activities.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

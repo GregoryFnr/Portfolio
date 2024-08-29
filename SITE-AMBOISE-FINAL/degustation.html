@@ -1,0 +1,349 @@
+
+ <!-- header start -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amboise Val de Loire</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.0.0/gpx.min.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+ <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="accueil-amboise.html"><img src="./img/amboise-logo-1.png" alt=""></a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay">
+                </div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                            <a href="#">Découvrir Amboise<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Histoire et Patrimoine Bati</h4>
+                                    <ul>
+                                         <li><a href="chateau-royal-amboise.html">Château Royal d'Amboise</a></li>
+                                         <li><a href="clos-luce-amboise.html">Clos Lucé</a></li>
+                                         <li><a href="monuments-historiques.html">Tous les monuments historiques</a></li>
+                                         <li><a href="visites-guidees.html">Nos visites guidées</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Itinéraires et Visites</h4>
+                                    <ul>
+                                        <li><a href="idees-journees-weekend.html">Idée de journée & week-end</a></li>
+                                        <li><a href="visites-thematiques.html">Guides de visites thématiques</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Loisirs</h4>
+                                  <ul>
+                                         <li><a href="activites-plein-air.html">Activités de plein air (vélo, randonnée)</a></li>
+                                         <li><a href="parcs-jardins.html">Parcs et jardins</a></li>
+                                         <li><a href="activités-nautiques.html">Activités nautiques </a></li>
+                                         <li><a href="degustation.html">Dégustation de produits locaux</a></li>
+                                         <li><a href="recettes.html">Recettes locales</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Vie Culturelle</h4>
+                                    <ul>
+                                        <li><a href="agenda.html">Agenda</a></li>
+                                        <li><a href="marches-locaux.html">Marchés locaux et artisanat</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">Préparer son séjour<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Hébergements</h4>
+                                    <ul>
+                                         <li><a href="hotels.html">Hôtels</a></li>
+                                         <li><a href="chambres-hotes.html">Chambres d'hôtes</a></li>
+                                         <li><a href="locations-vacances.html">Locations de vacances</a></li>
+                                         <li><a href="campings.html">Campings</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Restauration</h4>
+                                    <ul>
+                                        <li><a href="restaurants-locaux.html">Restaurants locaux</a></li>
+                                        <li><a href="restaurants-gastronomiques.html">Restaurants gastronomique</a></li>
+                                        <li><a href="cafes-bar.html">Cafés et bars</a></li>
+                                        <li><a href="vignobles.html">Vignobles</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Informations Pratiques</h4>
+                                    <ul>
+                                        <li><a href="train.html">Comment venir en train ?</a></li>
+                                        <li><a href="transports-stationnement.html">Transports publics et stationnement</a></li>
+                                        <li><a href="questions.html">Question fréquentes</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<section class="hero degustation">
+    <div class="container-titre">
+        <div class="titre-hero">
+            <h1>Dégustation de produits locaux</h1>
+        </div>
+    </div>
+</section>
+
+<section class="intro">
+    <div class="intro-container">
+        <h2>Dégustation de produits locaux à Amboise</h2>
+        <p>Bienvenue à Amboise, une ville riche en histoire et en saveurs authentiques. Découvrez une <b>gastronomie raffinée</b> et variée qui met à l'honneur les trésors de la Vallée de la Loire. Des <b>vins réputés</b> aux <b>fromages savoureux,</b> en passant par les <b>rillettes de Tours</b> et les <b>poires tapées de Rivarennes,</b> chaque bouchée est une invitation à savourer le terroir local. Parcourez nos suggestions de restaurants pour une expérience culinaire inoubliable au cœur d'Amboise.</p>
+    </div>
+</section>
+
+<section class="produits">
+    <div class="container-produits">
+        <a href="#" class="card-link sainte-maure" data-modal="modal-sainte-maure">
+            <div class="card-produit">
+                <h3 class="h3-produit">Le Sainte-Maure de Touraine</h3>
+            </div>
+        </a>
+        <a href="#" class="card-link rilette" data-modal="modal-rilette">
+            <div class="card-produit">
+                <h3 class="h3-produit">La rillette et les rillons</h3>
+            </div>
+        </a>
+        <a href="#" class="card-link nougat" data-modal="modal-nougat">
+            <div class="card-produit">
+                <h3 class="h3-produit">Le nougat de Tours</h3>
+            </div>
+        </a>
+        <a href="#" class="card-link vin-blanc" data-modal="modal-vin-blanc">
+            <div class="card-produit">
+                <h3 class="h3-produit">Vin blanc Vouvray</h3>
+            </div>
+        </a>
+        <a href="#" class="card-link poires" data-modal="modal-poires">
+            <div class="card-produit">
+                <h3 class="h3-produit">Poire tapées</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Modals -->
+<div id="modal-sainte-maure" class="modal-produit">
+    <div class="modal-content">
+        <div class="modal-content-container">
+            <i class='bx bx-x' ></i>
+            <div class="left">
+                <img src="./img/saint-maure-carre.jpg" alt="Sainte-Maure de Touraine">
+            </div>
+            <div class="right">
+                <h3>Le Sainte-Maure de Touraine</h3>
+                <p>C'est un fromage de chèvre cylindrique avec une paille de seigle en son centre, originaire de la région tourangelle.</p>
+                <a href="restaurants-locaux.html"><button class="btn-visites-guidees">Déguster dans nos restaurants locaux</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-rilette" class="modal-produit">
+    <div class="modal-content">
+            <div class="modal-content-container">
+            <i class='bx bx-x' ></i>
+            <div class="left">
+                <img src="./img/rillette-tours-carre.jpg" alt="Rillette">
+            </div>
+            <div class="right">
+                <h3>Les rillettes de Tours</h3>
+                <p>C'est une spécialité charcutière de la région, sont fondantes et savoureuses.</p>
+                <a href="restaurants-locaux.html"><button class="btn-visites-guidees">Déguster dans nos restaurants locaux</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-nougat" class="modal-produit">
+    <div class="modal-content">
+            <div class="modal-content-container">
+            <i class='bx bx-x' ></i>
+            <div class="left">
+                <img src="./img/nougat-de-tours-carre.jpg" alt="Nougat de Tours">
+            </div>
+            <div class="right">
+                <h3>Le nougat de Tours</h3>
+                <p>C'est une pâtisserie composée de pâte feuilletée, de fruits confits et de macarons.</p>
+                <a href="recettes.html"><button class="btn-visites-guidees">Voir la recette</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-vin-blanc" class="modal-produit">
+    <div class="modal-content">
+            <div class="modal-content-container">
+            <i class='bx bx-x' ></i>
+            <div class="left">
+                <img src="./img/vin-vouvray-carre.jpg" alt="Vin blanc Vouvray">
+            </div>
+            <div class="right">
+                <h3>Vin blanc Vouvray</h3>
+                <p>Il est souvent effervescent ou moelleux, produit à proximité d'Amboise et très réputé pour sa qualité.</p>
+                <a href="restaurants-locaux.html"><button class="btn-visites-guidees">Découvrir nos vignobles</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-poires" class="modal-produit">
+    <div class="modal-content">
+            <div class="modal-content-container">
+            <i class='bx bx-x' ></i>
+            <div class="left">
+                <img src="./img/poires-tapees2.jpg" alt="Poires tapées">
+            </div>
+            <div class="right">
+                <h3>Les poires tapées</h3>
+                <p>Elles font le bonheur des gourmands qui viennent découvrir cette spécialité de Touraine dans le village de Rivarennes, près d’Azay-le-Rideau. </p>
+                <a href="recettes.html"><button class="btn-visites-guidees">Voir la recette</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="title-ou">
+    <h2>Où déguster ces produits ?</h2>
+</div>
+
+<section class="marches">
+    <div class="container-column">
+        <div class="left">
+            <img src="./img/marche-amboise-carre.jpg" alt="">
+        </div>
+        <div class="right">
+            <h3>Au marché d'Amboise</h3>
+            <p>Le marché d'Amboise, qui se tient tous les <b>vendredis et dimanches matin,</b> est un rendez-vous incontournable pour les amateurs de produits frais et locaux. En flânant parmi les étals colorés, vous pourrez rencontrer des producteurs passionnés et déguster les spécialités qui font la renommée de la région.</p>
+            <a href="marches-locaux.html"><button class="btn-visites-guidees">Découvrir le marché</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="marches">
+    <div class="container-column-2">
+        <div class="left">
+            <h3>Dans nos restaurants locaux</h3>
+            <p>Savourez des plats authentiques préparés avec des <b>produits frais</b> de la région, des <b>fromages artisanaux</b> aux <b>vins réputés</b> de la Loire. Ces établissements mettent un point d'honneur à valoriser les trésors gastronomiques de leur terroir, vous promettant un voyage gustatif inoubliable.</p>
+            <a href="restaurants-locaux.html"><button class="btn-visites-guidees">Découvrir nos restaurants locaux</button></a>
+        </div>
+        <div class="right">
+            <img src="./img/resto-carre.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+    <!--Footer start-->
+        <section class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/amboise-logo-2.png" alt="">
+            </div>
+            <div class="row-footer">
+                <ul class="column-footer">
+                    <li><h3>Localisation</h3></li>
+                    <li><a href="#">Quai du général de gaulle <br>37400 Amboise</a></li>
+                    <li><a href="#"><i class='bx bx-phone' style="font-size: 1.5rem;"></i> 02 47 57 09 28 </a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nous contacter</h3></li>
+                    <li><p>Nous vous proposons un formulaire de contact pour toutes demandes de renseignements particulières</p></li>
+                    <li><a href="contact.html"><button class="btn-footer-contact">Contacter</button></a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nos réseaux sociaux</h3></li>
+                    <li><a href="https://www.instagram.com/amboisetourisme/" target="_blank"><i class='bx bxl-instagram' style="font-size: 1.5rem;"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/amboisetourisme" target="_blank"> <i class='bx bxl-facebook-square' style="font-size: 1.5rem;" ></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@amboisetourisme" target="_blank"><i class='bx bxl-tiktok'  style="font-size: 1.5rem;"></i> TikTok</a></li>
+                </ul>
+            </div>
+            <div class="partners-container">
+                <ul class="partners-row">
+                    <li><a href="https://www.qualite-tourisme.gouv.fr/fr" target="_blank"><img src="./img/icone-qualite-tourisme.svg" alt=""></a></li>
+                    <li><a href="https://tourisme-handicaps.org/" target="_blank"><img src="./img/icone-tourisme-handicap.svg" alt=""></a></li>
+                    <li><a href="https://www.adn-tourisme.fr/" target="_blank"><img src="./img/icone-ot-de-france.svg" alt=""></a></li>
+                    <li><a href="https://www.loireavelo.fr/" target="_blank"><img src="./img/icone-loire-a-velo.svg" alt=""></a></li>
+                </div>
+            </ul>
+            <div class="legal">
+                <ul class="row-legal">
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Conditions générale de vente</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+                <ul class="row-legal" style="margin-top: 20px;">
+                    <li><a href="https://www.linkedin.com/in/gregory-fnr/" target="_blank" style="color: #C7AA67; opacity: 1;">© Site web réalisé par Grégory FOURNIER</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Footer end-->
+
+    
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal-accordeon.js"></script>
+</body>
+</html>

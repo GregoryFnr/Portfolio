@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #131a24;
+    padding: 20px;
+}
+
+body #particles{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.form-group textarea:focus, .form-group input:focus {
+    border-color: black;
+}
+
+.container {
+    max-width: 1070px;
+    width: 100%;
+    display: flex;
+    margin-inline: 1rem;
+    border-radius: 5px;
+}
+
+.gradient-section {
+    width: 50%;
+    position: relative;
+}
+
+.gradient  {
+    width: 100%;
+    height: 100%;
+    background-color: #2b2f4b;
+    background-image: radial-gradient(at 83% 69%, rgb(84, 82, 207) 0px, transparent 50%),
+    radial-gradient(at 9% 70%, rgb(126, 72, 187) 0px, transparent 50%),
+    radial-gradient(at 61% 52%, rgb(91, 103, 207) 0px, transparent 50%),
+    radial-gradient(at 28% 93%, rgb(65, 78, 197) 0px, transparent 50%),
+    radial-gradient(at 34% 6%, rgb(119, 45, 153) 0px, transparent 50%),
+    radial-gradient(at 51% 86%, rgb(143, 49, 172) 0px, transparent 50%),
+    radial-gradient(at 32% 55%, rgb(76, 64, 161) 0px, transparent 50%);
+}
+
+.gradient-content {
+    padding: 2rem;
+    width: 92%;
+    position: absolute;
+    color: hsl(240, 54%, 15%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0. 28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(6.7px);
+    backdrop-filter: blur(6.7px);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.gradient-content h1 {
+    font-weight: 600;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gradient-content span {
+    color: #ffffff;
+}
+
+.form-section {
+    padding: 40px 50px 30px;
+    width: 550px;
+    background-color: #fff;
+}
+
+.form-section form {
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: #16164d;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    font-size: 0.875rem;
+    font-weight: 50;
+    width: 100%;
+    color: hsl(240, 54%, 15%);
+    padding: 0.3rem;
+    border: 2px solid #ccc;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.send-btn {
+    color: #fff;
+    background: linear-gradient(to right, #4776e6 0%, #7f47e6 100%);
+    padding: 6px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px #00000022;
+    transition: box-shadow .3s ease;
+}
+
+.send-btn:hover {
+    box-shadow: 1px 1px 10px 3px #00000043;
+}
+
+.result-container {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-container p {
+    font-size: 0.845rem;
+    font-weight: 500;
+    color: #3461ca;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 60rem) {
+    
+    .container{
+        margin: 0;
+    }
+
+    .gradient-content{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 56rem) {
+
+    .container{
+        max-width: 90%;
+        flex-direction: column;
+        margin-inline: 0;
+    }
+
+    .gradient-section, .form-section{
+        width: 100%;
+    }
+
+    .gradient-section{
+        height: 25vh;
+    }
+
+    .gradient-content{
+        inset: 0;
+        transform: translate(0, 0);
+        padding: 1rem 1.6rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .gradient-content h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .gradient-content p {
+        font-size: 0.75rem;
+    }
+
+    .form-section {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .form-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .form-section button {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (max-width: 36.25rem) {
+    
+    .container {
+        max-width: 100%;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+}

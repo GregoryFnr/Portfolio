@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amboise Val de Loire</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/2.0.0/gpx.min.js"></script>
+</head>
+<body>
+
+<!-- header start -->
+ <header class="header">
+    <div class="container">
+        <div class="row v-center">
+            <div class="header-item item-left">
+                <div class="logo">
+                    <a href="accueil-amboise.html"><img src="./img/amboise-logo-1.png" alt=""></a>
+                </div>
+            </div>
+            <!-- menu start here -->
+            <div class="header-item item-center">
+                <div class="menu-overlay">
+                </div>
+                <nav class="menu">
+                    <div class="mobile-menu-head">
+                        <div class="go-back"><i class="fa fa-angle-left"></i></div>
+                        <div class="current-menu-title"></div>
+                        <div class="mobile-menu-close">&times;</div>
+                    </div>
+                    <ul class="menu-main">
+                        <li class="menu-item-has-children">
+                            <a href="#">Découvrir Amboise<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Histoire et Patrimoine Bati</h4>
+                                    <ul>
+                                         <li><a href="chateau-royal-amboise.html">Château Royal d'Amboise</a></li>
+                                         <li><a href="clos-luce-amboise.html">Clos Lucé</a></li>
+                                         <li><a href="monuments-historiques.html">Tous les monuments historiques</a></li>
+                                         <li><a href="visites-guidees.html">Nos visites guidées</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Itinéraires et Visites</h4>
+                                    <ul>
+                                        <li><a href="idees-journees-weekend.html">Idée de journée & week-end</a></li>
+                                        <li><a href="visites-thematiques.html">Guides de visites thématiques</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                  <h4 class="title">Loisirs</h4>
+                                  <ul>
+                                         <li><a href="activites-plein-air.html">Activités de plein air (vélo, randonnée)</a></li>
+                                         <li><a href="parcs-jardins.html">Parcs et jardins</a></li>
+                                         <li><a href="activités-nautiques.html">Activités nautiques </a></li>
+                                         <li><a href="degustation.html">Dégustation de produits locaux</a></li>
+                                         <li><a href="recettes.html">Recettes locales</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Vie Culturelle</h4>
+                                    <ul>
+                                        <li><a href="agenda.html">Agenda</a></li>
+                                        <li><a href="marches-locaux.html">Marchés locaux et artisanat</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="#">Préparer son séjour<i class="fa fa-angle-down"></i></a>
+                            <div class="sub-menu mega-menu mega-menu-column-4">
+                              <div class="list-item">
+                                    <h4 class="title">Hébergements</h4>
+                                    <ul>
+                                         <li><a href="hotels.html">Hôtels</a></li>
+                                         <li><a href="chambres-hotes.html">Chambres d'hôtes</a></li>
+                                         <li><a href="locations-vacances.html">Locations de vacances</a></li>
+                                         <li><a href="campings.html">Campings</a></li>
+                                    </ul>
+                              </div>
+                              <div class="list-item">
+                                    <h4 class="title">Restauration</h4>
+                                    <ul>
+                                        <li><a href="restaurants-locaux.html">Restaurants locaux</a></li>
+                                        <li><a href="restaurants-gastronomiques.html">Restaurants gastronomique</a></li>
+                                        <li><a href="cafes-bar.html">Cafés et bars</a></li>
+                                        <li><a href="vignobles.html">Vignobles</a></li>
+                                    </ul>
+                              </div>
+
+                              <div class="list-item">
+                                    <h4 class="title">Informations Pratiques</h4>
+                                    <ul>
+                                        <li><a href="train.html">Comment venir en train ?</a></li>
+                                        <li><a href="transports-stationnement.html">Transports publics et stationnement</a></li>
+                                        <li><a href="questions.html">Question fréquentes</a></li>
+                                    </ul>
+                              </div>
+                            </div>
+                        <li>
+                            <a href="contact.html">Nous contacter</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- menu end here -->
+            <div class="header-item item-right">
+                
+                <!-- mobile menu trigger -->
+                <div class="mobile-menu-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end -->
+
+<section class="hero activites-nautiques">
+    <div class="container-titre">
+        <div class="titre-hero">
+            <h1>Les activités nautiques d'Amboise</h1>
+        </div>
+    </div>
+</section>
+
+<section class="intro">
+    <div class="intro-container">
+        <h2>Activités Nautiques à Amboise</h2>
+        <h5>Plongez dans l'Aventure Aquatique !</h5>
+        <p>Que vous souhaitiez pagayer à votre rythme en <b>canoë,</b> explorer la Loire en bateau sans permis, ou profiter d'une <b>croisière promenade paisible,</b> Amboise a de quoi satisfaire tous les amoureux de l'eau. Embarquez pour des moments de détente et de découverte sur l'un des <b>plus beaux fleuves de France.</b> Une escapade rafraîchissante et divertissante vous attend au cœur de la nature.</p>
+    </div>
+</section>
+
+<div class="main-container" style="max-width: 1400px; margin: 0 auto;">
+    <div class="cards-filters-container">
+        <div class="card-map-container" style="justify-content: center;">
+            <div class="activity card-map canoe">
+                <div class="card-map-title">
+                    <h2>Balades libres en canoë canadiens</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-euro'></i><span class="text-icon">A partir de 22€ / pers</span></li>
+                        <li><i class='bx bx-phone'></i><span class="text-icon">02 47 23 26 52</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Loire Aventure</h2>
+                    <p>Décourvrez la Loire le temps d’une location de quelques heures ou plusieurs jours à bord de canoës Canadiens</p>
+                    <a href="http://www.loire-aventure.fr/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map bateau-sans-permis" data-category="velo">
+                <div class="card-map-title ">
+                    <h2>Location de bateau sans permis</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-euro'></i><span class="text-icon">A partir de 41€</span></li>
+                        <li><i class='bx bx-phone'></i><span class="text-icon">02 47 23 98 64</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">La Bélandre</h2>
+                    <p>A bord d'un bateau électrique sans permis de 5 places, vous découvrirez le Cher, ses barrages à aiguilles et le domaine du somptueux Château de Chenonceau.</p>
+                    <a href="https://www.labelandre.com/les-bateaux-electrique/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map bateau-resto" data-category="rando">
+                <div class="card-map-title ">
+                    <h2>Bateau Restaurant</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-euro'></i><span class="text-icon">66,50€ / pers</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">2h30</span></li>
+                        <li><i class='bx bx-phone'></i><span class="text-icon">02 47 23 98 64</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Dégustez et profitez</h2>
+                    <p>A bord du bateau restaurant LA BELANDRE, venez découvrir une autre vision du Château de Chenonceau.</p>
+                    <a href="https://www.labelandre.com/croisiere-repas/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map croisiere-promenade" data-category="rando">
+                <div class="card-map-title ">
+                    <h2>Croisière promenade</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-male'></i><span class="text-icon">12€</span></li>
+                        <li><i class='bx bx-child'></i><span class="text-icon">8€ (4 à 12 ans)</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">50min</span></li>
+                        <li><i class='bx bx-phone'></i><span class="text-icon">02 47 23 98 64</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Promenade sur la loire</h2>
+                    <p>Nos équipages vous emmènent à la découverte du Cher, une rivière sinueuse et romantique</p>
+                    <a href="https://www.labelandre.com/croisiere-promenade/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+
+            <div class="activity card-map bateau-trad" data-category="accrobranche">
+                <div class="card-map-title ">
+                    <h2>Balade en bateau traditionnel</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-male'></i><span class="text-icon">20€</span></li>
+                        <li><i class='bx bx-child'></i><span class="text-icon">12€ (4 à 12 ans)</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">1h30</span></li>
+                        <li><i class='bx bx-phone'></i><span class="text-icon">06 88 76 57 14</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Balade sur la Loire</h2>
+                    <p>Promenade en bateau sur la Loire avec repas et apéritif possibles, vue imprenable sur les châteaux</p>
+                    <a href="https://www.milliere-raboton.net/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+            <div class="activity card-map canoe-2">
+                <div class="card-map-title ">
+                    <h2>Tours & Canoë</h2>
+                </div>
+                <div class="card-map-info-icon">
+                    <ul class="info-icon-container">
+                        <li><i class='bx bx-male' ></i><span class="text-icon">25€</span></li>
+                        <li><i class='bx bx-child' ></i><span class="text-icon">15€ (4 à 12 ans)</span></li>
+                        <li><i class='bx bx-time'></i><span class="text-icon">2h30</span></li>
+                        <li><i class='bx bx-phone' ></i><span class="text-icon">06 08 62 95 15</span></li>
+                    </ul>
+                </div>
+                <div class="card-map-info ">
+                    <h2 style="text-align: start;">Tours & Canoë</h2>
+                    <p>Un départ au pied du château d’Amboise vous mettra dans l’ambiance d’un émerveillement naturel.</p>
+                    <a href="https://www.tours-canoe.fr/tour/amboise-vouvray-1-2-journee/" target="_blank"><button class="learn-more-btn">En savoir plus</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--Footer start-->
+    <section class="footer">
+        <div class="container-footer">
+            <div class="logo-footer">
+                <img src="./img/amboise-logo-2.png" alt="">
+            </div>
+            <div class="row-footer">
+                <ul class="column-footer">
+                    <li><h3>Localisation</h3></li>
+                    <li><a href="#">Quai du général de gaulle <br>37400 Amboise</a></li>
+                    <li><a href="#"><i class='bx bx-phone' style="font-size: 1.5rem;"></i> 02 47 57 09 28 </a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nous contacter</h3></li>
+                    <li><p>Nous vous proposons un formulaire de contact pour toutes demandes de renseignements particulières</p></li>
+                    <li><a href="contact.html"><button class="btn-footer-contact">Contacter</button></a></li>
+                </ul>
+                <ul class="column-footer">
+                    <li><h3>Nos réseaux sociaux</h3></li>
+                    <li><a href="https://www.instagram.com/amboisetourisme/" target="_blank"><i class='bx bxl-instagram' style="font-size: 1.5rem;"></i> Instagram</a></li>
+                    <li><a href="https://www.facebook.com/amboisetourisme" target="_blank"> <i class='bx bxl-facebook-square' style="font-size: 1.5rem;" ></i> Facebook</a></li>
+                    <li><a href="https://www.tiktok.com/@amboisetourisme" target="_blank"><i class='bx bxl-tiktok'  style="font-size: 1.5rem;"></i> TikTok</a></li>
+                </ul>
+            </div>
+            <div class="partners-container">
+                <ul class="partners-row">
+                    <li><a href="https://www.qualite-tourisme.gouv.fr/fr" target="_blank"><img src="./img/icone-qualite-tourisme.svg" alt=""></a></li>
+                    <li><a href="https://tourisme-handicaps.org/" target="_blank"><img src="./img/icone-tourisme-handicap.svg" alt=""></a></li>
+                    <li><a href="https://www.adn-tourisme.fr/" target="_blank"><img src="./img/icone-ot-de-france.svg" alt=""></a></li>
+                    <li><a href="https://www.loireavelo.fr/" target="_blank"><img src="./img/icone-loire-a-velo.svg" alt=""></a></li>
+                </div>
+            </ul>
+            <div class="legal">
+                <ul class="row-legal">
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Conditions générale de vente</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                </ul>
+                <ul class="row-legal" style="margin-top: 20px;">
+                    <li><a href="https://www.linkedin.com/in/gregory-fnr/" target="_blank" style="color: #C7AA67; opacity: 1;">© Site web réalisé par Grégory FOURNIER</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Footer end-->
+
+    
+    <script src="./js/menu.js"></script>
+</body>
+</html>

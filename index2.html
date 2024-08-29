@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me contacter</title>
+
+    <!--JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  
+
+    <!--CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+        <div id="particles" data-aos="zoom-in"></div>
+    
+    <div class="container" data-aos="fade-right">
+        <div class="gradient-section">
+            <div class="gradient"></div>
+            <div class="gradient-content">
+            <h1 class="heading"> Bienvenue, sur la <span> Page </span> me  <span> Contacter </span> </h1>
+            <p class="paragraph">  </p>
+            </div>
+        </div>  
+    
+
+    <div class="form-section">
+        <h2> Bonjour ! </h2>
+        <p> Ci-dessous vous retrouverez les informations à me transmettre afin de me contacter </p>
+        <form>
+            <div class="form-group">
+                <label for="user_name"> Nom :</label>
+                <input type="text" name="user_name" id="user_name" required autocomplete="off"
+                placeholder="Votre nom">
+            </div>
+
+            <div class="form-group">
+                <label for="user_email"> Email :</label>
+                <input type="text" name="user_email"
+                id="user_email" required autocomplete="off"
+                    placeholder="exemple@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="subject"> Objet :</label>
+                <input type="text" name="subject"
+                id="subject" required autocomplete="off"
+                    placeholder="Candidature...">
+            </div>
+            
+
+            <div class="form-group">
+                <label for="message"> Message :</label>
+                <textarea name="message" id="message" required spellcheck="false" autocomplete="off" 
+                    placeholder="Votre texte..."></textarea>
+            </div>
+
+            <div class="form-group result-container">
+                <p class="result"> Message envoyé ! </p>
+                <button type="button" class="send-btn"> Envoyer </button>
+            </div>
+
+        </form>
+    </div>
+    </div> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+</body>
+</html>
