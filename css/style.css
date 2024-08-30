@@ -142,7 +142,7 @@ header .info-text .scroll::before{
 }
 
 #about .card-profil {
-    background-image: url(/assets/pdp.png);
+    background-image: url(../assets/pdp.png);
     background-size: cover; 
     background-position: center;
     width: 400px;
