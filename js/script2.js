@@ -1,6 +1,6 @@
 
 
-emailjs.init("VcGuJMv1wUFsje6-ocls");
+emailjs.init("ZBlY3beOajcTp78Ac");
 
 const sendBtn = document.querySelector('.send-btn');
 const result = document.querySelector('.result');
