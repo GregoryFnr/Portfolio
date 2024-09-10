@@ -1091,6 +1091,10 @@ h3:hover .bx-chevron-right {
   transform: translateX(5px);
 }
 
+.slider1-title h2:hover .bx-chevron-right {
+  transform: translateX(5px);
+}
+
 .card {
   border-radius: 2px;
 }
