@@ -17,7 +17,7 @@ body {
 
 header {
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   background-color: #131a24;
   color: #fff;
 }
@@ -148,7 +148,6 @@ header .info-text .scroll::before {
 }
 
 #about .card-profil {
-  background-image: url("/assets/design.jpg");
   background-size: cover;
   background-position: center;
   width: 400px;
