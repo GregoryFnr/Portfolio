@@ -1,150 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/icon_portfolio.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/icon_portfolio.png" />
     <title>Portfolio de Grégory</title>
-
 
     <!--JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 
-
     <!--CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-    
+  <body>
     <header>
-        <div id="particles" data-aos="zoom-in"></div>
-        <div class="info-text">
-            <h1>Grégory FOURNIER</h1>
-            <a href="#about" class="scroll"><i class='bx bx-down-arrow bx-fade-up' ></i></a>
-        </div>
+      <div id="particles" data-aos="zoom-in"></div>
+      <div class="info-text">
+        <h1>Grégory FOURNIER</h1>
+        <p>À la recherche d'un poste dans le développement web</p>
+        <a href="#about" class="scroll"
+          ><i class="bx bx-down-arrow bx-fade-up"></i
+        ></a>
+      </div>
     </header>
 
     <section id="about">
-        <div class="header">
-            <h1>A propos de moi</h1>
-            <a href="index2.html">Me contacter</a>
+      <div class="header">
+        <h1>A propos de moi</h1>
+        <a href="index2.html">Me contacter</a>
+      </div>
+
+      <div class="card">
+        <div class="info">
+          <!--<h1>Qui suis-je</h1>-->
+          <p>
+            Bien que débutant, je suis passionné par le développement web.
+            Actuellement en apprentissage de Vue et Nuxt, je suis en constante
+            évolution pour maîtriser de nouveaux outils et langages. Avec
+            <b>plusieurs projets</b> pro et perso réalisés, je suis prêt à
+            relever de nouveaux défis et apporter des solutions innovantes.
+          </p>
         </div>
-
-        <div class="card" data-aos="fade-up">
-            <div class="card-profil" style="background-image: url("assets/pdp.png")"></div>
-            <div class="info">
-                <h1>Qui suis-je ?</h1>
-                <p>
-                    Bien que débutant, je suis passionné par le développement web. Je me spécialise dans la conception de sites <b>dynamiques</b> et <b>intuitifs</b>, avec des compétences en HTML, CSS, et JavaScript. Actuellement en apprentissage de Vue et Nuxt, je suis en constante évolution pour maîtriser de nouveaux outils et langages. Avec <b>plusieurs projets</b> réalisés pour des entreprises et collectivités locales, je suis prêt à relever de nouveaux défis et apporter des solutions innovantes.
-                </p>
-
+        <div id="features-3">
+          <div class="header-2">
+            <h2>Les technos que j'utilise</h2>
+          </div>
+          <div class="logo-techno-grid">
+            <div class="item item-1">
+              <i class="bx bxl-html5"></i>
+              <p>HTML</p>
             </div>
+            <div class="item item-2">
+              <i class="bx bxl-css3"></i>
+              <p>CSS</p>
+            </div>
+            <div class="item item-3">
+              <i class="bx bxl-javascript"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="item item-4">
+              <i class="bx bxl-vuejs"></i>
+              <p>Vue</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="features-2">
+      <div class="header">
+        <h1>Quelques projets</h1>
+      </div>
+      <div class="feature-cards">
+        <div class="card">
+          <div class="info">
+            <div class="image">
+              <img src="assets/amboise.jpg" />
+            </div>
+            <h1>Site web</h1>
+            <p>
+              Au cours de cette année d'étude, j'ai plusieurs projets à réaliser
+              qui consiste à faire un site web
+              <b>de A à Z et voici un de ces projets.</b>
+            </p>
+            <hr class="separator" />
+            <div class="techno-used-container">
+              <p>Technologies utilisées :</p>
+              <div class="techno-used">
+                <i class="bx bxl-html5"></i>
+                <i class="bx bxl-css3"></i>
+                <i class="bx bxl-javascript"></i>
+              </div>
+            </div>
+          </div>
+          <a href="SITE-AMBOISE-FINAL/accueil-amboise.html">Visiter le site</a>
+        </div>
+        <div class="card">
+          <div class="info">
+            <div class="image">
+              <img src="assets/no-limit.jpg" />
+            </div>
+            <h1>Web Design</h1>
+            <p>
+              Le Web Design me passionne, en effet il est essentiel car il
+              façonne la première impression d'un site web et influe directement
+              sur l'expérience de l'utilisateur.
+            </p>
+          </div>
+          <a
+            href="web_design/no_limit_projet_onepage.pdf"
+            download="no_limit_projet_onepage"
+            >Télécharger le PDF</a
+          >
+        </div>
+        <div class="card">
+          <div class="info">
+            <div class="image">
+              <img src="assets/weather-app.jpg" />
+            </div>
+            <h1>Application</h1>
+            <p>
+              Durant mon temps libre, je m'entraîne à coder des applications,
+              des pages web etc afin d'approfondir mes connaissances.
+            </p>
+            <hr class="separator" />
+            <div class="techno-used-container">
+              <p>Technologies utilisées :</p>
+              <div class="techno-used">
+                <i class="bx bxl-html5"></i>
+                <i class="bx bxl-css3"></i>
+                <i class="bx bxl-javascript"></i>
+              </div>
+            </div>
+          </div>
+          <a href="weather_app/index.html">Voir l'App</a>
+        </div>
+      </div>
     </section>
 
     <section id="features">
-        <div class="header">
-            <h1>Compétences</h1>
+      <div class="header">
+        <h1>Compétences</h1>
+      </div>
+      <div class="feature-cards">
+        <div class="card">
+          <div class="info">
+            <i class="bx bx-layer-plus"></i>
+            <h1>Apprentissage continu</h1>
+            <p>
+              Ma capacité à apprendre rapidement me permet de m'adapter aux
+              évolutions du secteur. Fort d'une expérience en gestion de projet,
+              je sais <b>analyser</b> les <b>besoins clients</b> et livrer des
+              solutions sur mesure, alliant efficacité technique et créativité.
+            </p>
+          </div>
         </div>
-        <div class="feature-cards" data-aos="fade-up">
-            <div class="card">
-                <div class="info">
-                    <i class='bx bx-layer-plus' ></i>
-                    <h1>Apprentissage continu</h1>
-                    <p>
-                        Ma capacité à apprendre rapidement me permet de m'adapter aux évolutions du secteur. Fort d'une expérience en gestion de projet, je sais <b>analyser</b> les <b>besoins clients</b> et livrer des solutions sur mesure, alliant efficacité technique et créativité.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <i class='bx bx-code-alt' ></i>
+        <div class="card">
+          <div class="info">
+            <i class="bx bx-code-alt"></i>
 
-                    <h1>Maîtrise des langages web</h1>
-                    <p>
-                        Le développement web me passionne, je maîtrise divers langages de programmation essentiels pour la création de sites dynamiques et fonctionnels. Mes capacités s'étendent notamment à <b>HTML,</b> <b>CSS,</b> <b>JavaScript</b> pour la conception front-end. Bien entendu, je continue à approfondir davantage mes connaissances au fil du temps.
-                    </p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <i class='bx bx-folder-open' ></i>
-                    <h1>Gestion de projets</h1>
-                    <p>
-                        Mon expérience dans la gestion de projets de développement m’a permis de mener à bien des <b>missions complexes,</b> en respectant le cahier des charges et les <b>attentes des clients.</b> J’ai su allier rigueur et créativité pour concevoir des solutions sur mesure, adaptées aux besoins spécifiques des entreprises. Cette approche m'a appris à comprendre les <b>objectifs des clients,</b> et à livrer des projets qui répondent pleinement à leurs attentes.
-                    </p>
-                </div>
-            </div>
+            <h1>Maîtrise des langages web</h1>
+            <p>
+              Le développement web me passionne, je maîtrise divers langages de
+              programmation essentiels pour la création de sites dynamiques et
+              fonctionnels. Mes capacités s'étendent notamment à <b>HTML,</b>
+              <b>CSS,</b> <b>JavaScript</b> pour la conception front-end. Bien
+              entendu, je continue à approfondir davantage mes connaissances au
+              fil du temps.
+            </p>
+          </div>
         </div>
+        <div class="card">
+          <div class="info">
+            <i class="bx bx-folder-open"></i>
+            <h1>Gestion de projets</h1>
+            <p>
+              Mon expérience dans la gestion de projets de développement m’a
+              permis de mener à bien des <b>missions complexes,</b> en
+              respectant le cahier des charges et les
+              <b>attentes des clients.</b> Cette approche m'a appris à
+              comprendre les <b>objectifs des clients,</b> et à livrer des
+              projets qui répondent pleinement à leurs attentes.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-    <section id="features-2">
-        <div class="header">
-            <h1>Mes différents projets</h1>
-        </div>
-        <div class="feature-cards" data-aos="fade-up">
-            <div class="card">
-                <div class="info">
-                    <div class="image">
-                        <img src="assets/refonte.jpg">
-                    </div>
-                    <h1>Création d'un site web</h1>
-                    <p>
-                        Au cours de cette année d'étude, j'ai plusieurs projets à réaliser qui consiste à faire un site web <b>de A à Z.</b> Cela me permet d'apprendre davantage les différents langages de programmation ainsi que de développer une autonomie et rigueur régulière dans mon travail. Ci-dessous vous retrouverez un des projet qui est en cours de réalisation.
-                    </p>
-                </div>
-                <a href="SITE-AMBOISE-FINAL/accueil-amboise.html">Voir Plus</a>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <div class="image">
-                        <img src="assets/design.jpg">
-                    </div>
-                    <h1>Web Design</h1>
-                    <p>
-                        Le Web Design me passionne, en effet il est essentiel car il façonne la première impression d'un site web et influe directement sur l'expérience de l'utilisateur.  Une conception esthétiquement agréable et fonctionnelle augmente l'attrait du site, encourage l'exploration du contenu et renforce la crédibilité de la marque. Le bouton "Télécharger PDF" vous permettra d'aller jeter un oeil à un projet de site "One Page" que j'ai réalisé pour un devoir en graphisme.
-                    </p>
-                </div>
-                <a href="web_design/no_limit_projet_onepage.pdf" download="no_limit_projet_onepage">Télécharger le PDF</a>                
-            </div>
-            <div class="card">
-                <div class="info">
-                    <div class="image">
-                        <img src="assets/autres.avif">
-                    </div>
-                    <h1>Autres Projets</h1>
-                    <p>
-                        Durant mon temps libre, je m'entraîne à coder des applications, des pages web etc afin d'approfondir mes connaissances. Dernièrement j'ai réalisé une application météo que vous pouvez la retrouver en cliquant sur le bouton ci-dessous.
-                    </p>
-                </div>
-                <a href="weather_app/index.html">Voir l'App</a>
-            </div>
-        </div>
-    </section>
-
 
     <button class="scroll-top" onclick="scrollToTop()">
-        <i class='bx bxs-up-arrow'></i>
+      <i class="bx bxs-up-arrow"></i>
     </button>
 
-
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        AOS.init();
-      </script>
-
-    
-    
-    
     <script src="js/script.js"></script>
-</body>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

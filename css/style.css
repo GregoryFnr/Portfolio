@@ -13,12 +13,12 @@ html {
 
 body {
   font-size: 14px;
+  background-color: #131a24;
 }
 
 header {
   width: 100%;
   height: 100vh;
-  background-color: #131a24;
   color: #fff;
 }
 
@@ -41,6 +41,12 @@ header .info-text {
 
 header .info-text h1 {
   font-size: 5rem;
+  font-weight: 500;
+  font-family: "Ubuntu";
+}
+
+header .info-text p {
+  font-size: 1.2rem;
   font-weight: 500;
   font-family: "Ubuntu";
 }
@@ -92,7 +98,6 @@ header .info-text .scroll::before {
 
 #about,
 #features {
-  background-color: #131a24;
   padding: 40px;
 }
 
@@ -148,6 +153,7 @@ header .info-text .scroll::before {
 }
 
 #about .card-profil {
+  background-image: url("/assets/pdp.png");
   background-size: cover;
   background-position: center;
   width: 400px;
@@ -207,6 +213,92 @@ header .info-text .scroll::before {
 
 #features .feature-cards .card .info p {
   font-size: 1.1rem;
+}
+
+#features-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 10px;
+}
+
+#features-3 .header-2 {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+#features-3 .header-2 h2 {
+  font-size: 1rem;
+  color: #2ea2f1;
+  text-transform: uppercase;
+}
+
+#features-3 .logo-techno-grid {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#features-3 .logo-techno-grid .item p {
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#features-3 .logo-techno-grid .item {
+  width: 100%;
+  text-align: center;
+}
+
+.bxl-html5 {
+  color: #e35c26;
+}
+
+.bxl-css3 {
+  color: #264de4;
+}
+
+.bxl-javascript {
+  color: #f0db4f;
+}
+
+.bxl-vuejs {
+  color: #42b883;
+}
+
+#features-3 .logo-techno-grid .item-1 {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+#features-3 .logo-techno-grid .item-2 {
+  grid-row: 2 / 2;
+  grid-column: 1 / 2;
+}
+
+#features-3 .logo-techno-grid .item-3 {
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+}
+
+#features-3 .logo-techno-grid .item-4 {
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+}
+
+#features-3 .logo-techno-grid i {
+  font-size: 3.5rem;
 }
 
 .scroll-top {
@@ -281,6 +373,12 @@ header .info-text .scroll::before {
 
   #features .feature-cards .card .info p {
     font-size: 1rem;
+  }
+
+  #features-2 .feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
   }
 
   #features-2 .feature-cards .card .info h1 {
@@ -388,10 +486,42 @@ header .info-text .scroll::before {
   line-height: 1.8rem;
 }
 
-#features .feature-cards {
+.separator {
+  margin: 20px auto;
+  width: 20%;
+}
+
+.techno-used-container {
+  width: 100%;
+}
+
+#features-2 .feature-cards .card .info .techno-used-container p {
+  color: #f2c021;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.techno-used {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+#features-2 .feature-cards .card .info .techno-used-container .techno-used i {
+  font-size: 3rem;
+  width: auto;
+  margin-bottom: 0;
+}
+
+#features-2 .feature-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -405,7 +535,6 @@ header .info-text .scroll::before {
 }
 
 #features-2 .feature-cards .card .info i {
-  color: #fff;
   font-size: 8rem;
   width: 100%;
   text-align: center;
@@ -434,6 +563,7 @@ header .info-text .scroll::before {
   border: 1px solid transparent;
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.5);
   object-fit: cover;
+  object-position: center;
 }
 
 @media screen and (max-width: 575px) {
